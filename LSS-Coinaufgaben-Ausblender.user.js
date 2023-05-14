@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         LSS-Coinaufgaben-Ausblender
 // @namespace    leitstellenspiel.de
-// @version      1.1
+// @version      1.2
 // @description  Blendet Aufgaben aus, die etwas mit Coins ausgeben zu tun haben.
 // @author       MissSobol
 // @match        https://www.leitstellenspiel.de/tasks/index
@@ -20,7 +20,7 @@
         const form = panel.querySelector('.task_name');
 
         // Überprüfe, ob das Formular das Wort "Coin" oder "Coins" enthält
-        if (form && (form.textContent.includes('Coin') || form.textContent.includes('Coins'))) {
+        if (form && (form.textContent.includes('Coin') || form.textContent.includes('Coins') || form.textContent.includes('sofort fertig'))) {
         // Verstecke das Panel
         panel.style.display = 'none';
         // Gib den Tasknamen in der Konsole aus (wenn nicht gewünscht, die folgende Zeile einfach auskommentieren)
