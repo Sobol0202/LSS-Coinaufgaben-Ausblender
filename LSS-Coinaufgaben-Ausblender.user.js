@@ -1,31 +1,15 @@
 // ==UserScript==
 // @name         LSS-Coinaufgaben-Ausblender
 // @namespace    leitstellenspiel.de
-// @version      1.2
+// @version      1.3
 // @description  Blendet Aufgaben aus, die etwas mit Coins ausgeben zu tun haben.
 // @author       MissSobol
 // @match        https://www.leitstellenspiel.de/tasks/index
 // @grant        none
 // ==/UserScript==
 
-(function() {
-    'use strict';
-
-    // Suche nach Panels mit der Klasse "panel panel-default mission_panel_green task_panel"
-    const panels = document.querySelectorAll('.panel.panel-default.mission_panel_green.task_panel');
-
-    // Iteriere über die gefundenen Panels
-    for (let i = 0; i < panels.length; i++) {
-        const panel = panels[i];
-        const form = panel.querySelector('.task_name');
-
-        // Überprüfe, ob das Formular das Wort "Coin" oder "Coins" enthält
-        if (form && (form.textContent.includes('Coin') || form.textContent.includes('Coins') || form.textContent.includes('sofort fertig'))) {
-        // Verstecke das Panel
-        panel.style.display = 'none';
-        // Gib den Tasknamen in der Konsole aus (wenn nicht gewünscht, die folgende Zeile einfach auskommentieren)
-        console.log('Ausgeblendeter Taskname:', form.textContent.trim());
-        }
-    }
-})();
-
+//Lieber Scriptnutzer,
+//schweren Herzens habe ich heute alle meine Scripte deaktiviert. Der Betreiber hat mir meinen Forenaccount gesperrt, will mir aber weder verraten warum, noch ist man gewillt in Diskurs mit mir zu treten. Da ich ohne einen Forenaccount nicht das Level an Support geben kann, welches ich für mich selber als erforderlich betrachte, habe ich mit sofortiger Wirkung alle meine Scripte deaktiviert.
+//Ich bedanke mich für 5 Jahre Zusammenarbeit im Forum. Danke an alle, die meine Scripte genutzt haben, Daumen dagelassen haben und Kommentare geschrieben haben.
+//Liebe Grüße und noch viel Spaß
+//Sobol
